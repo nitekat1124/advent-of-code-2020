@@ -3,9 +3,6 @@ from utils.solution_base import SolutionBase
 
 
 class Solution(SolutionBase):
-    __move = {"N": [0, -1], "S": [0, 1], "E": [1, 0], "W": [-1, 0]}
-    __turn = {"L": ["N", "W", "S", "E"], "R": ["N", "E", "S", "W"]}
-
     def solve(self, part_num: int):
         self.test_runner(part_num)
 
