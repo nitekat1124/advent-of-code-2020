@@ -4,7 +4,7 @@ from utils.solution_base import SolutionBase
 
 class Solution(SolutionBase):
     def solve(self, part_num: int):
-        # self.test_runner(part_num)
+        self.test_runner(part_num)
 
         func = getattr(self, f"part{part_num}")
         result = func(self.data)
@@ -22,7 +22,7 @@ class Solution(SolutionBase):
             else:
                 params = [i, 5]
 
-            if func(*params) == r[0]:
+            if func(*params) == int(r[0]):
                 print(f"test {test_counter} passed")
             else:
                 print(f"test {test_counter} NOT passed")
